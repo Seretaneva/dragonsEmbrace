@@ -1,0 +1,129 @@
+{
+  "chapter": "Capitolul 2. Familia",
+  "dialogues": [
+    {
+      "id": "33",
+      "character": "Nuala",
+      "text": "A existat cândva o împărăție măreață, stăpânită de civilizația omenească. Regele Eldran și regina Lyra conduceau cu înțelepciune acel tărâm...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "2" }
+      ]
+    },
+    {
+      "id": "2",
+      "character": "Narator",
+      "text": "Nuala, sora mai mare, nu avusese norocul să se nască cu un talent deosebit. Era considerată mai puțin frumoasă și mai puțin talentată...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "3" }
+      ]
+    },
+    {
+      "id": "3",
+      "character": "Narator",
+      "text": "Într-o cameră a palatului, Nuala îi observă de la distanță pe Lyra și Eldran...",
+      "options": [
+        { "text": "De ce ea trebuie să aibă totul?", "nextDialogue": "4" },
+        { "text": "Într-o zi, voi lua înapoi ce mi se cuvine.", "nextDialogue": "5" },
+        { "text": "Poate e mai bine să nu simt asta… dar pur și simplu nu mă pot abține.", "nextDialogue": "6" }
+      ]
+    },
+    {
+      "id": "4",
+      "character": "Narator",
+      "text": "Nuala își simte sângele clocotind. De ce trebuia sora ei să aibă toate acestea? Nu era ea cea care merita măcar o parte din această dragoste?",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "7" }
+      ]
+    },
+    {
+      "id": "5",
+      "character": "Narator",
+      "text": "O flacără de hotărâre îi luminează privirea. A acceptat prea mult timp această umilire...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "7" }
+      ]
+    },
+    {
+      "id": "6",
+      "character": "Narator",
+      "text": "Nuala își simte sufletul divizat. Îi era rușine de aceste gânduri negre, de invidia care-i pătrundea inima...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "7" }
+      ]
+    },
+    {
+      "id": "7",
+      "character": "Narator",
+      "text": "Au trecut anii, și într-o zi de primăvară, regina a venit în palat cu o veste minunată: era însărcinată...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "8" }
+      ]
+    },
+    {
+      "id": "8",
+      "character": "Narator",
+      "text": "Într-o noapte, în timp ce se afla în camera ei, o cioară cu aripi negre și ochi înflăcărați a bătut la fereastră...",
+      "options": [
+        { "text": "Sunt gata să fac orice.", "nextDialogue": "9" },
+        { "text": "Ce ai de câștigat din asta?", "nextDialogue": "10" },
+        { "text": "Nu sunt sigură… dar îmi doresc dreptatea.", "nextDialogue": "11" }
+      ]
+    },
+    {
+      "id": "9",
+      "character": "Narator",
+      "text": "Pentru a încheia acest pact, va trebui să faci ceva...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "10",
+      "character": "Narator",
+      "text": "Umbra rânji, parcă încântată de întrebarea Nualei...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "11",
+      "character": "Narator",
+      "text": "Dreptatea, spui? Ah, cât de naiva ești…",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "12",
+      "character": "Narator",
+      "text": "A venit și ziua fatidică. Lyra, știind ce urmează, s-a îmbrăcat în cea mai frumoasă rochie...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "13" }
+      ]
+    },
+    {
+      "id": "13",
+      "character": "Narator",
+      "text": "Nuala poruncește slugilor să le aducă paharele cu vin.",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "14" }
+      ]
+    },
+    {
+      "id": "14",
+      "character": "Narator",
+      "text": "În câteva secunde, regele și regina au căzut cu capul pe masă...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "15" }
+      ]
+    },
+    {
+      "id": "15",
+      "character": "Narator",
+      "text": "Între timp, Lugan fugea cu micuța Keira...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": null }
+      ]
+    }
+  ]
+}
