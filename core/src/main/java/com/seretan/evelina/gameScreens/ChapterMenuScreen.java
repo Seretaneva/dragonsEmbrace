@@ -1,4 +1,4 @@
-package com.seretan.evelina;
+package com.seretan.evelina.gameScreens;
 
 import com.badlogic.gdx.Screen;
 

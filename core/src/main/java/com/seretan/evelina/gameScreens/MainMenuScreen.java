@@ -1,11 +1,10 @@
-package com.seretan.evelina;
+package com.seretan.evelina.gameScreens;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
@@ -16,6 +15,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.seretan.evelina.gameChapters.ChapterOneGameScreen;
+import com.seretan.evelina.gameSettings.GameState;
 
 
 public class MainMenuScreen implements Screen {
@@ -26,6 +27,7 @@ public class MainMenuScreen implements Screen {
     private FitViewport viewport;
     private Texture background;
 
+
     public MainMenuScreen(Game game) {
         this.game = game;
     }
@@ -33,13 +35,14 @@ public class MainMenuScreen implements Screen {
     @Override
     public void show() {
         batch = new SpriteBatch();
-        viewport = new FitViewport(800, 600);
+        viewport = new FitViewport(800, 480);
+        viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
         stage = new Stage(viewport, batch);
         Gdx.input.setInputProcessor(stage);
         if (GameState.getInstance().isPlayMusic) {
             GameState.getInstance().playMenuMusic();
         }
-        background = new Texture("main_bg.png");
+        background = new Texture("gameBackgrounds/main_bg.png");
         Image backgroundImage = new Image(new TextureRegionDrawable(background));
         backgroundImage.setFillParent(true);
         stage.addActor(backgroundImage);
@@ -54,16 +57,16 @@ public class MainMenuScreen implements Screen {
         table.setFillParent(true);
         table.center();
 
-        table.add(newGameButton).size(200, 100).padBottom(20);
+        table.add(newGameButton).size(120, 70).padBottom(20);
         table.row();
 
-        table.add(continueButton).size(200, 100).padBottom(20);
+        table.add(continueButton).size(120, 70).padBottom(20);
         table.row();
-        table.add(chaptersButton).size(200, 100).padBottom(20);
+        table.add(chaptersButton).size(120, 70).padBottom(20);
         table.row();
-        table.add(optionsButton).size(200, 100).padBottom(20);
+        table.add(optionsButton).size(120, 70).padBottom(20);
         table.row();
-        table.add(exitButton).size(200, 100).padBottom(20);
+        table.add(exitButton).size(120, 70).padBottom(20);
 
         stage.addActor(table);
     }
@@ -93,8 +96,9 @@ public class MainMenuScreen implements Screen {
     }
 
     @Override
-    public void resize(int i, int i1) {
-
+    public void resize(int width, int height) {
+        viewport.update(width, height, true);
+        stage.getViewport().update(width, height, true);
     }
 
     @Override
@@ -136,7 +140,6 @@ public class MainMenuScreen implements Screen {
     public Button initNewGameButton() {
 
         Button newGameButton = initButton(loadLanguage(), "newGame");
-        stage.addActor(newGameButton);
         newGameButtonEvent(newGameButton);
         return newGameButton;
     }
@@ -153,7 +156,6 @@ public class MainMenuScreen implements Screen {
     public Button initContinueButton() {
 
         Button continueButton = initButton(loadLanguage(), "continue");
-        stage.addActor(continueButton);
         continueButtonEvent(continueButton);
         return continueButton;
     }
@@ -169,7 +171,6 @@ public class MainMenuScreen implements Screen {
 
     public Button initChapterButton() {
         Button chapterButton = initButton(loadLanguage(), "chapters");
-        stage.addActor(chapterButton);
         chapterButtonEvent(chapterButton);
         return chapterButton;
     }
@@ -185,7 +186,6 @@ public class MainMenuScreen implements Screen {
 
     public Button initExitButton() {
         Button exitButton = initButton(loadLanguage(), "exit");
-        stage.addActor(exitButton);
         exitButtonEvent(exitButton);
         return exitButton;
     }

@@ -1,10 +1,10 @@
-package com.seretan.evelina;
+package com.seretan.evelina.gameSettings;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.audio.Music;
 
 public class GameState {
     private GameState(){
-        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("medieval-ambient-236809.mp3"));
+        backgroundMusic = Gdx.audio.newMusic(Gdx.files.internal("music/medieval-ambient-236809.mp3"));
         backgroundMusic.setLooping(true);
         backgroundMusic.setVolume(1.0f);
         backgroundMusic.play();

@@ -1,4 +1,4 @@
-package com.seretan.evelina;
+package com.seretan.evelina.gameScreens;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
@@ -15,6 +15,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
+import com.seretan.evelina.gameSettings.GameState;
 
 public class OptionsMenuScreen implements Screen {
 
@@ -44,10 +45,11 @@ public class OptionsMenuScreen implements Screen {
     @Override
     public void show() {
         batch = new SpriteBatch();
-        viewport = new FitViewport(800, 600);
+        viewport = new FitViewport(800, 480);
+        viewport.update(Gdx.graphics.getWidth(), Gdx.graphics.getHeight(), true);
         stage = new Stage(viewport, batch);
         Gdx.input.setInputProcessor(stage);
-        background = new Texture("main_bg.png");
+        background = new Texture("gameBackgrounds/main_bg.png");
         Image backgroundImage = new Image(new TextureRegionDrawable(background));
         backgroundImage.setFillParent(true);
         stage.addActor(backgroundImage);
@@ -57,9 +59,9 @@ public class OptionsMenuScreen implements Screen {
         table.center();
         String savedLanguage = preferences.getString("language", "en");
         currentLanguageIndex = getLanguageIndex(savedLanguage);
-        roLanguage = new Texture("roButton.png");
-        ruLanguage = new Texture("ruButton.png");
-        enLanguage = new Texture("enButton.png");
+        roLanguage = new Texture("ro/roButton.png");
+        ruLanguage = new Texture("ru/ruButton.png");
+        enLanguage = new Texture("en/enButton.png");
 
 
         Button soundButton = initSoundButton();
@@ -89,7 +91,9 @@ public class OptionsMenuScreen implements Screen {
     }
 
     @Override
-    public void resize(int i, int i1) {
+    public void resize(int width, int height) {
+        viewport.update(width, height, true);
+        stage.getViewport().update(width, height, true);
     }
 
     @Override
@@ -169,8 +173,8 @@ public class OptionsMenuScreen implements Screen {
     }
 
     public Button initLeftArrowButton() {
-        leftArrowUp = new Texture("arrowLeft.png");
-        leftArrowDown = new Texture("arrowLeftDown.png");
+        leftArrowUp = new Texture("arrowsButtons/arrowLeft.png");
+        leftArrowDown = new Texture("arrowsButtons/arrowLeftDown.png");
         Button.ButtonStyle leftArrowStyle = new Button.ButtonStyle();
         leftArrowStyle.up = new TextureRegionDrawable(leftArrowUp);
         leftArrowStyle.down = new TextureRegionDrawable(leftArrowDown);
@@ -192,8 +196,8 @@ public class OptionsMenuScreen implements Screen {
     }
 
     public Button initRightArrowButton() {
-        rightArrowUp = new Texture("arrowRight.png");
-        rightArrowDown = new Texture("arrowRightDown.png");
+        rightArrowUp = new Texture("arrowsButtons/arrowRight.png");
+        rightArrowDown = new Texture("arrowsButtons/arrowRightDown.png");
         Button.ButtonStyle rightArrowStyle = new Button.ButtonStyle();
         rightArrowStyle.up = new TextureRegionDrawable(rightArrowUp);
         rightArrowStyle.down = new TextureRegionDrawable(rightArrowDown);

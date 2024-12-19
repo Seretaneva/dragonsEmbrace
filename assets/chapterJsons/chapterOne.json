@@ -3,64 +3,98 @@
   "dialogues": [
     {
       "id": "1",
-      "character": "Sasuke",
-      "text": "A existat cândva o împărăție măreață, stăpânită de civilizația omenească. Regele Eldran și regina Lyra conduceau cu înțelepciune acel tărâm...",
+      "character": "Naratorul",
+      "text": "A existat cândva o împărăție măreață, stăpânită de civilizația omenească. Regele Eldran și regina Lyra conduceau cu înțelepciune acel tărâm. Regele Eldran aparținea clanului omenesc, iar regina Lyra făcea parte din clanul druizilor.",
       "options": [
         { "text": "Continuă", "nextDialogue": "2" }
       ]
-    },
-    {
+    },{
       "id": "2",
-      "character": "Hinata",
-      "text": "Nuala, sora mai mare, nu avusese norocul să se nască cu un talent deosebit. Era considerată mai puțin frumoasă și mai puțin talentată...",
+      "character": "Naratorul",
+      "text": "Cu cinci mii de ani în urmă, un grup de oameni a fost primul care a reușit să stabilească o legătură strânsă cu draconii. După un război monstruos între draconi și demoni, oamenii și draconii aliați au ieșit victorioși, dar au plătit scump: draconii au ajuns aproape de dispariție.",
       "options": [
         { "text": "Continuă", "nextDialogue": "3" }
       ]
-    },
-    {
-      "id": "5",
-      "character": "Naruto",
-      "text": "Într-o cameră a palatului, Nuala îi observă de la distanță pe Lyra și Eldran...",
+    },{
+      "id": "3",
+      "character": "Naratorul",
+      "text": " În prezent, dispăruseră complet, lăsând druizilor moștenirea cunoașterii lor. Regina Lyra aparținea acestui clan, iar alături de ea trăia sora sa mai mare, Nuala, care, în adâncul inimii, simțea o gelozie crescândă față de sora ei.",
       "options": [
-        { "text": "De ce ea trebuie să aibă totul?", "nextDialogue": "4" },
-        { "text": "Într-o zi, voi lua înapoi ce mi se cuvine.", "nextDialogue": "5" },
-        { "text": "Poate e mai bine să nu simt asta… dar pur și simplu nu mă pot abține.", "nextDialogue": "6" }
+        { "text": "Continuă", "nextDialogue": "4" }
       ]
-    },
-    {
+    },{
       "id": "4",
-      "character": "Narator",
-      "text": "Nuala își simte sângele clocotind. De ce trebuia sora ei să aibă toate acestea? Nu era ea cea care merita măcar o parte din această dragoste?",
+      "character": "Naratorul",
+      "text": "Nuala, sora mai mare, nu avusese norocul să se nască cu un talent deosebit. Era considerată mai puțin frumoasă și mai puțin talentată în comparație cu Lyra, care aducea pace și veselie oriunde mergea.",
       "options": [
-        { "text": "Continuă", "nextDialogue": "7" }
+        { "text": "Continuă", "nextDialogue": "5" }
       ]
-    },
-    {
+    },{
       "id": "5",
-      "character": "Narator",
-      "text": "O flacără de hotărâre îi luminează privirea. A acceptat prea mult timp această umilire...",
+      "character": "Naratorul",
+      "text": " În fiecare an, pe măsură ce toată atenția era îndreptată către Lyra, ura și invidia se adânceau în sufletul Nualei.\n",
       "options": [
-        { "text": "Continuă", "nextDialogue": "7" }
+        { "text": "Continuă", "nextDialogue": "6" }
       ]
-    },
-    {
+    },{
       "id": "6",
-      "character": "Narator",
-      "text": "Nuala își simte sufletul divizat. Îi era rușine de aceste gânduri negre, de invidia care-i pătrundea inima...",
+      "character": "Naratorul",
+      "text": "După șapte ani, Nuala urma să se căsătorească cu regele Eldran, pentru a întări legătura dintre druizi și oameni. Dar, când Eldran a văzut-o pentru prima dată pe Lyra, ieșind din cameră într-o rochie aurie și cu părul roșu ca flacăra, s-a îndrăgostit de ea pe loc, neținând cont de dragostea ascunsă a Nualei pentru el.",
       "options": [
         { "text": "Continuă", "nextDialogue": "7" }
       ]
-    },
-    {
+    },{
       "id": "7",
-      "character": "Narator",
-      "text": "Au trecut anii, și într-o zi de primăvară, regina a venit în palat cu o veste minunată: era însărcinată...",
+      "character": "Naratorul",
+      "text": " Într-o cameră a palatului, Nuala îi observă de la distanță pe Lyra și Eldran. Cei doi sunt adânciți în conversație, iar Eldran îi zâmbește cu căldură Lyrei, atingându-i mâna într-un gest de afecțiune. Lyra râde, cu o expresie luminoasă. Fața Nualei este umbrită de o expresie de dispreț și invidie.\n",
       "options": [
         { "text": "Continuă", "nextDialogue": "8" }
       ]
     },
     {
       "id": "8",
+      "character": "Nuala",
+      "text": " (gânduri interioare):",
+      "options": [
+        { "buton": "De ce ea trebuie să aibă totul?", "nextDialogue": "9" },
+        { "buton": "Într-o zi, voi lua înapoi ce mi se cuvine.", "nextDialogue": "10" },
+        { "buton": "Poate e mai bine să nu simt asta… dar pur și simplu nu mă pot abține.", "nextDialogue": "11" }
+      ]
+    },
+    {
+      "id": "9",
+      "character": "Narator",
+      "text": "Nuala își simte sângele clocotind. De ce trebuia sora ei să aibă toate acestea? Nu era ea cea care merita măcar o parte din această dragoste?",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "10",
+      "character": "Narator",
+      "text": "O flacără de hotărâre îi luminează privirea. A acceptat prea mult timp această umilire...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "11",
+      "character": "Narator",
+      "text": "Nuala își simte sufletul divizat. Îi era rușine de aceste gânduri negre, de invidia care-i pătrundea inima...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "12" }
+      ]
+    },
+    {
+      "id": "12",
+      "character": "Narator",
+      "text": "Au trecut anii, și într-o zi de primăvară, regina a venit în palat cu o veste minunată: era însărcinată...",
+      "options": [
+        { "text": "Continuă", "nextDialogue": "13" }
+      ]
+    },
+    {
+      "id": "13",
       "character": "Narator",
       "text": "Într-o noapte, în timp ce se afla în camera ei, o cioară cu aripi negre și ochi înflăcărați a bătut la fereastră...",
       "options": [
@@ -70,7 +104,7 @@
       ]
     },
     {
-      "id": "9",
+      "id": "14",
       "character": "Narator",
       "text": "Pentru a încheia acest pact, va trebui să faci ceva...",
       "options": [
@@ -78,7 +112,7 @@
       ]
     },
     {
-      "id": "10",
+      "id": "15",
       "character": "Narator",
       "text": "Umbra rânji, parcă încântată de întrebarea Nualei...",
       "options": [
@@ -86,7 +120,7 @@
       ]
     },
     {
-      "id": "11",
+      "id": "16",
       "character": "Narator",
       "text": "Dreptatea, spui? Ah, cât de naiva ești…",
       "options": [
@@ -94,7 +128,7 @@
       ]
     },
     {
-      "id": "12",
+      "id": "17",
       "character": "Narator",
       "text": "A venit și ziua fatidică. Lyra, știind ce urmează, s-a îmbrăcat în cea mai frumoasă rochie...",
       "options": [
@@ -102,7 +136,7 @@
       ]
     },
     {
-      "id": "13",
+      "id": "18",
       "character": "Narator",
       "text": "Nuala poruncește slugilor să le aducă paharele cu vin.",
       "options": [
@@ -110,7 +144,7 @@
       ]
     },
     {
-      "id": "14",
+      "id": "19",
       "character": "Narator",
       "text": "În câteva secunde, regele și regina au căzut cu capul pe masă...",
       "options": [
@@ -118,7 +152,7 @@
       ]
     },
     {
-      "id": "15",
+      "id": "20",
       "character": "Narator",
       "text": "Între timp, Lugan fugea cu micuța Keira...",
       "options": [
